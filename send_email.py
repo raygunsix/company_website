@@ -1,4 +1,4 @@
-import smtplib
+import smtplib, ssl
 
 host = "smtp.example.com"
 port = 465
