@@ -18,6 +18,7 @@ st.write(description)
 st.header("Our Team")
 
 col1, col2, col3 = st.columns(3)
+df = pandas.readcsv("data.csv")
 
 with col1:
     st.write("Name")
