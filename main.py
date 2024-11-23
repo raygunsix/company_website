@@ -15,7 +15,7 @@ culpa qui officia deserunt mollit anim id est laborum.
 """
 st.write(description)
 
-st.header("Our Team")
+st.subheader("Our Team")
 
 col1, col2, col3 = st.columns(3)
 df = pandas.read_csv("data.csv")
