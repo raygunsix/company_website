@@ -18,19 +18,28 @@ st.write(description)
 st.header("Our Team")
 
 col1, col2, col3 = st.columns(3)
-df = pandas.readcsv("data.csv")
+df = pandas.read_csv("data.csv")
 
 with col1:
-    st.write("Name")
-    st.write("Title")
-    st.write("Photo")
+    for index, row in df[:4].iterrows():
+        first_name = row['first name']
+        last_name =  row['last name']
+        st.header(f"{first_name.title()} {last_name.title()}")
+        st.write(row['role'])
+        st.write("Photo")
 
 with col2:
-    st.write("Name")
-    st.write("Title")
-    st.write("Photo")
+    for index, row in df[4:8].iterrows():
+        first_name = row['first name']
+        last_name =  row['last name']
+        st.header(f"{first_name.title()} {last_name.title()}")
+        st.write(row['role'])
+        st.write("Photo")
 
 with col3:
-    st.write("Name")
-    st.write("Title")
-    st.write("Photo")
+    for index, row in df[8:].iterrows():
+        first_name = row['first name']
+        last_name =  row['last name']
+        st.header(f"{first_name.title()} {last_name.title()}")
+        st.write(row['role'])
+        st.write("Photo")
