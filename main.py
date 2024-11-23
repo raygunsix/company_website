@@ -22,24 +22,21 @@ df = pandas.read_csv("data.csv")
 
 with col1:
     for index, row in df[:4].iterrows():
-        first_name = row['first name']
-        last_name =  row['last name']
-        st.header(f"{first_name.title()} {last_name.title()}")
+        full_name = f"{row['first name']} {row['last name']}"
+        st.header(full_name.title())
         st.write(row['role'])
         st.write("Photo")
 
 with col2:
     for index, row in df[4:8].iterrows():
-        first_name = row['first name']
-        last_name =  row['last name']
-        st.header(f"{first_name.title()} {last_name.title()}")
+        full_name = f"{row['first name']} {row['last name']}"
+        st.header(full_name.title())
         st.write(row['role'])
         st.write("Photo")
 
 with col3:
     for index, row in df[8:].iterrows():
-        first_name = row['first name']
-        last_name =  row['last name']
-        st.header(f"{first_name.title()} {last_name.title()}")
+        full_name = f"{row['first name']} {row['last name']}"
+        st.header(full_name.title())
         st.write(row['role'])
         st.write("Photo")
