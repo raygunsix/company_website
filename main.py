@@ -15,3 +15,21 @@ culpa qui officia deserunt mollit anim id est laborum.
 """
 st.write(description)
 
+st.header("Our Team")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write("Name")
+    st.write("Title")
+    st.write("Photo")
+
+with col2:
+    st.write("Name")
+    st.write("Title")
+    st.write("Photo")
+
+with col3:
+    st.write("Name")
+    st.write("Title")
+    st.write("Photo")
